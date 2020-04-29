@@ -1,0 +1,259 @@
+@import https://fonts.googleapis.com/css?family=Roboto&display=swap;
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    margin: 20px 230px 0px 230px;
+    font-family: 'Roboto', sans-serif;
+   
+  
+}
+
+
+
+.nav li{
+    display: inline;
+    
+}
+
+.nav a.aFoodfy{
+  
+    margin-right: 90px;
+    font-size: 20px;
+}
+
+.nav a.alinks{
+    font-size: 16px;
+}
+
+.nav a.alinks2{
+    display: inline;
+    margin-left: 15px;
+    font-size: 16px;
+}
+
+.nav a{
+    text-decoration: none;
+    color: #111111;
+}
+
+.main-info{
+    position: absolute;
+}
+.main-info .textReceitas{
+    background-color: #FBDFDB;
+    width: 940px;
+    height: 366px;
+    margin-top: 15px;
+    border-radius: 2%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.info{
+    position: absolute;
+    width: 375px;
+    
+}
+
+.info h1{
+    color: #111111;
+    font-weight: bold;
+    font-size: 32px;
+    letter-spacing: 0px;
+    margin:50px 0px 0px 30px;
+    position: relative;
+    display: inline-block;
+}
+
+.info p{
+    color: #111111;
+    font-size: 18px;
+    margin-left: 30px;
+    position: relative;
+    display: inline-block;
+    
+}
+
+.img-chef{
+    position: relative;
+    width: 100%;
+}
+
+.img-chef img{
+    width: 216px;
+    height: 300px;
+    top: 65px;
+    left: 600px;
+    position: relative; 
+    display: inline-flex;
+    
+}
+
+.wraper{
+    position: absolute;
+    width: 940px;
+}
+
+main{
+    min-height: calc(180vh - 23px - 18px);
+}
+
+/*footer{
+    position: fixed;
+    margin: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 1350px; 
+}*/
+
+footer{
+    position: relative;
+
+}
+
+footer p{
+    text-align: center;
+    font-size: 16px;
+    padding: 15px;
+    background-color: #EEEEEE;
+    
+}
+
+.frame{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 15px;
+}
+
+.frame-receitas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 50px;
+}
+
+.grid-acessos img{
+    border-radius: 5%;
+    width: 97%;
+}
+
+.autor{
+    color:#777777;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.nome-receita{
+    color: #111111;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.modal-Overlay{
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-Overlay.active{
+        opacity: 1;
+        visibility: visible;
+    }
+
+
+.modal{
+    background-color: white;
+    margin: 10vh auto;
+    width: 600px;
+    height: 400px;
+    position: relative;
+    justify-content: center;
+    border-radius:2%;
+    
+   
+}
+
+.modal-content{
+    position: absolute;
+    width: 100%;
+    
+}
+
+.grid-modal{
+
+    position: relative;
+    margin: 50px 100px;
+  
+}
+
+.grid-modal img{
+    width: 400px;
+    height: 200px; 
+    border-radius: 2%;
+      
+    
+}
+
+.grid-modal p{
+    text-align: center;
+}
+
+.grid-modal a{
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    color:#999999;
+    margin-top: 60px;
+}
+
+.sobre-content h1{
+    color: #111111 ;
+    font-size: 24px;
+    margin-top: 20px;
+    padding-bottom: 15px;
+}
+
+.sobre-content p{
+    color: #444444;
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+
+.sobre-content h2{
+    color: #111111;
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+.id_receita{
+    display: none;
+}
+
+.content-recipes{
+    margin-top: 30px;
+    width:0 auto ;
+}
+
+.content-recipes img{
+    border-radius: 10px;
+}
+
+.nome-receita-centro{
+    margin: 30px;
+    text-align: center;
+}
+
+.content-recipes ul{
+    margin: 0;
+    padding: 0;
+    list-style-position: inside; /*Deixa os marcadores da lista dentro da DIV */
+}

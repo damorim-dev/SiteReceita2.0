@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>foodfy</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/style.css'>
+</head>
+
+<body>
+    <div class="wraper">
+        <header>
+            <div class="nav">
+                <ul>
+                    <li><a href="/" class="aFoodfy">Foodfy</a></li>
+                    <li><a href="sobre.njk" class="alinks">Sobre</a></li>
+                    <li><a href="/menu" class="alinks2">Receitas</a></li>
+                </ul>
+            </div>
+        </header>
+
+{% block content %}
+{% endblock %}
+
+ <footer>
+            <p class="copyright">Todos direitos reservados, receitas Foodfy.</p>
+        </footer>
+    </div>
+{% block script %}
+{% endblock %}
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+        <main>
+            <div class="frame-receitas">
+                {% for item in items %}
+                 
+                <div class="grid-acessos" id="{{loop.index0}}">
+                    <a href="#"><img src="{{item.image}}" alt="Triplo Bacon"></a>
+                    <p class="id_receita">{{loop.index0}}</p>
+                    <p class="nome-receita">{{item.title}}</p>
+                    <p class="autor">{{item.author}}</p>
+                </div>
+                {% endfor %}
+            </div>
+            
+
+        </main>
+        {% endblock %}
+        <footer>
+            <p class="copyright">Todos direitos reservados, receitas Foodfy.</p>
+        </footer>
+    </div>
+    {% block script %}
+    <script src="script.js"></script>
+    {% endblock %}
+</body>
+
+</html>
