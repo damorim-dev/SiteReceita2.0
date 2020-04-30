@@ -9,21 +9,31 @@
             <p class="nome-receita">{{items[id].title}}</p>
             <p class="autor">{{items[id].author}}</p>
         </div>
-        <h2>Ingredientes</h2><br>
-        <ul>
-        {% for item in items[id].ingredients %}
-        
-        <li>{{item}}</li>
-       
-        
-        {% endfor %}
-          </ul>
-        <br>
+        <h2>Ingredientes</h2>
+        <a href="#" class="btn-ing esconder">ESCONDER</a><br>
+        <div class="ingredients">
+            <ul>
+                {% for item in items[id].ingredients %}
 
-        <h2>Modo de Prepado</h2><br>
-        <p>{{items[id].preparation | join("\n" | nl2br)}}</p><br>
+                    <li>{{item}}</li>
 
-        <h2>Informações Adicionais</h2><br>
-        <p>{{items[id].information}}</p><br>
+                {% endfor %}
+            </ul>
+            <br>
+        </div>
+        <h2>Modo de Prepado</h2>
+        <a href="#" class="btn-mod esconder">ESCONDER</a><br>
+        <div class="modo">
+            <p>{{items[id].preparation | join("\n" | nl2br)}}</p><br>
+        </div>
+        
+            <h2>Informações Adicionais</h2>
+            <a href="#" class="btn-info esconder">ESCONDER</a><br>
+        <div class="info-ing">
+            <p>{{items[id].information}}</p><br>
+        </div>
     </div>
+    {% block script %}
+        <script src="/script.js"></script>
+    {% endblock %}
 {% endblock %}

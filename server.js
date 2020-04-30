@@ -36,6 +36,10 @@ server.get("/recipes/:index", function (req, res) {
     return res.render('recipes',{items:recipes, id:recipeIndex}); 
   })
 
+  server.get("/sobre",function(req,res){
+    return res.render('sobre')
+})
+
 server.listen(5000,function(){
     console.log("Server is running");
 })
